@@ -32,7 +32,7 @@ function Details() {
   return (
     <div className='w-full min-h-[100vh] h-full bg-lightBg dark:bg-darkBg px-5 pt-24 md:px-14 pb-5 dark:text-white'>
        <div className="flex justify-start mb-10">
-      <Link to='/'>
+      <Link to='/countries-gallery/'>
         <button className='flex bg-white dark:bg-darkElem px-4 py-2 justify-center lg:gap-2 items-center rounded-lg shadow-md text-lg lg:w-[125px]'>
           <FaArrowLeft className='mr-2 min-h-[16px] min-w-[16px]' />
           <span className='font-semibold'>Back</span>

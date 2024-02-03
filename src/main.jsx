@@ -10,7 +10,7 @@ import NotFound from './components/NotFound/NotFound.jsx'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<Layout />}>
+    <Route path='/countries-gallery/' element={<Layout />}>
       <Route path='' element={<Home />} />
       <Route path='details/:countryUrl' element={<Details />} />
       <Route path='*' element={<NotFound />}/>
