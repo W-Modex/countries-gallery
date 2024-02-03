@@ -1,7 +1,7 @@
 {
   "name": "countries-informations",
   "private": true,
-  "version": "1.0.0",
+  "version": "0.0.0",
   "type": "module",
   "homepage": "https://github.com/W-Modex/countries-gallery",
   "scripts": {
