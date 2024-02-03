@@ -56,7 +56,7 @@ function Home() {
         <select className='w-[50%] min-w-[150px] mt-5 cursor-pointer lg:mt-0 md:w-[35%] lg:w-[10%] bg-white p-3 dark:bg-darkElem dark:text-white rounded-lg' value={region} onChange={(e) => setRegion(e.target.value)} >
           <option value="default" disabled className='hidden'>Filter By Region</option>
           <option value="africa" >Africa</option>
-          <option value="america">America</option>
+          <option value="america">Americas</option>
           <option value="asia">Asia</option>
           <option value="europe">Europe</option>
           <option value="oceania">Oceania</option>
