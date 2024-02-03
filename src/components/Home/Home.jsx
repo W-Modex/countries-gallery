@@ -56,7 +56,7 @@ function Home() {
         <select className='w-[50%] min-w-[150px] mt-5 cursor-pointer lg:mt-0 md:w-[35%] lg:w-[10%] bg-white p-3 dark:bg-darkElem dark:text-white rounded-lg' value={region} onChange={(e) => setRegion(e.target.value)} >
           <option value="default" disabled className='hidden'>Filter By Region</option>
           <option value="africa" >Africa</option>
-          <option value="americas">Americas</option>
+          <option value="americas">America</option>
           <option value="asia">Asia</option>
           <option value="europe">Europe</option>
           <option value="oceania">Oceania</option>
@@ -76,6 +76,7 @@ function Home() {
       {data
         .filter(country => region !== 'default' ? region === country.region.toLowerCase() : region === 'default' && country['name']['common'] !== 'Israel')
         .map(country => (
+          country['name']['common'] !== 'Israel' ?
           <div key={country['name']['common']}>
             <Link to={'details/' + formatString(country['name']['common'])}>
               <Card
@@ -88,6 +89,7 @@ function Home() {
               />
             </Link>
           </div>
+          : ''
         ))
       }
       </div>
