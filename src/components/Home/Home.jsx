@@ -76,7 +76,7 @@ function Home() {
       {data
         .filter(country => region !== 'default' ? region === country.region.toLowerCase() : region === 'default' && country['name']['common'] !== 'Israel')
         .map(country => (
-          country['name']['common'] !== 'Israel' && country['name']['common'] !== 'Nepal' ?
+          country['name']['common'] !== 'Israel' ?
           <div key={country['name']['common']}>
             <Link to={'details/' + formatString(country['name']['common'])}>
               <Card
