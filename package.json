@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/W-Modex/countries",
+  "homepage": "https://github.com/W-Modex/countries-gallery",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
